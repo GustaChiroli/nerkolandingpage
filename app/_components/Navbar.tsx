@@ -9,12 +9,12 @@ const Navbar = () => {
                         <Image src="/logo.jpeg" alt="Nerko" width={120} height={36} />
                     </div>
                     <div className="flex justify-evenly">
-                        <h1 className=" text-[#741FF5] px-4 content-center text-xl font-semibold font-sans">Home</h1>
-                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-semibold font-sans">Choose</h1>
-                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-semibold font-sans">About</h1>
-                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-semibold font-sans">Team</h1>
-                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-semibold font-sans">Road Map</h1>
-                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-semibold font-sans">Blog</h1>
+                        <h1 className=" text-[#741FF5] px-4 content-center text-xl font-bold font-MabryPro-Regular">Home</h1>
+                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">Choose</h1>
+                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">About</h1>
+                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">Team</h1>
+                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">Road Map</h1>
+                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">Blog</h1>
                     </div>
                 </div>
 

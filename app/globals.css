@@ -32,3 +32,24 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'MabryPro';
+  src: url('/fonts/MabryPro-Black.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MabryPro-Medium';
+  src: url('/fonts/MabryPro-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MabryPro-Regular';
+  src: url('/fonts/MabryPro-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
