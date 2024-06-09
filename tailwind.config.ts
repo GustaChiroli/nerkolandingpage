@@ -14,6 +14,10 @@ const config: Config = {
         'MabryPro-Medium': ['MabryPro-Medium', 'sans-serif'],
         'MabryPro-Regular': ['MabryPro-Regular', 'sans-serif'],
       },
+      colors: {
+        buttomBlue: '#3A00FA',
+        buttomPink: '#E400ED',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

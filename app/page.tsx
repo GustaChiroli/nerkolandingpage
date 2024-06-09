@@ -1,6 +1,6 @@
 import Background from "./_components/Background";
 import Navbar from "./_components/Navbar";
-import FirstSession from "./_components/firstSession";
+import FirstSession from "./_components/FirstSession";
 
 const Home = () => {
     return (
