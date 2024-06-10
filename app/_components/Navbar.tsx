@@ -3,7 +3,7 @@ import Image from "next/image";
 const Navbar = () => {
     return (
         <div className=" flex justify-center h-20  py-[10px] mt-[10px]">
-            <div className=" flex justify-center w-[92.5%]">
+            <div className=" flex justify-center w-[92.5%] max-w-[1200px]">
                 <div className=" flex justify-between w-full" >
                     <div className=" content-center">
                         <Image src="/logo.jpeg" alt="Nerko" width={120} height={36} />
