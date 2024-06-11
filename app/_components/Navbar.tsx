@@ -14,7 +14,7 @@ const Navbar = () => {
                         <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">About</h1>
                         <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">Team</h1>
                         <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">Road Map</h1>
-                        <h1 className=" hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">Blog</h1>
+                        <h1 className=" hover:text-[#741FF5] pl-4 content-center text-xl font-MabryPro-Regular">Blog</h1>
                     </div>
                 </div>
 

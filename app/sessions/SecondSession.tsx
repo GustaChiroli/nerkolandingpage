@@ -2,7 +2,7 @@ import Card from "../_components/SecondSession/Card";
 const alignbot = "mt-[29px]"
 const FirstSession = () => {
   return (
-    <div className="flex justify-center" >
+    <div className="flex justify-center pt-[60px]" >
 
       <div className="flex flex-wrap justify-center gap-8 pt-[60px] pb-[80px] max-w-[1200px]">
         <Card align={alignbot} imag="/images/secondSession/06.jpg" title="#Metaverse" sub="By TheSalvare" />
