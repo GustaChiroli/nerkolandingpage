@@ -8,7 +8,6 @@ const Home = () => {
     <>
       <Navbar />
       <div>
-        <Background />
 
         <FirstSession />
       </div>
