@@ -4,15 +4,17 @@ import FirstSession from "./sessions/FirstSession";
 import SecondSession from "./sessions/SecondSession";
 
 const Home = () => {
-    return (
-        <>
-            <Background/>
-            <Navbar/>
-            <FirstSession/>
-            <SecondSession/>
-        </>
+  return (
+    <>
+      <Navbar />
+      <div>
+        <Background />
 
-    );
-}
+        <FirstSession />
+      </div>
+      <SecondSession />
+    </>
+  );
+};
 
 export default Home;

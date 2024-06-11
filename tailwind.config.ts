@@ -18,6 +18,9 @@ const config: Config = {
         buttomBlue: '#3A00FA',
         buttomPink: '#E400ED',
       },
+      borderRadius:{
+        'cardBorderRadius': '20px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

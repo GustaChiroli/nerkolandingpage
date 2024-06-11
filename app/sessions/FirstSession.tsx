@@ -1,23 +1,23 @@
 import Image from "next/image";
 const FirstSession = () => {
   return (
-    <div className="w-full h-full justify-center text-center mt-[82px]">
+    <div className="w-full h-full justify-center text-center mt-[82px] mb-[80px]">
       <div className=" flex justify-center">
         <div className=" flex w-64 justify-center">
-          <div className=" flex top-[-20%] left-[50%] absolute">
-              <Image src='/images/ethereum-01.jpeg' alt="Ethereum" width={44} height={43.5} />
+          <div className=" flex top-[15%] left-[45%] absolute">
+              <Image src='/images/firstSession/ethereum-01.png' alt="Ethereum" className="z-20" width={44} height={43.5} />
           </div>
-          <div className=" flex top-[16%] left-[-16%] absolute">
-              <Image src='/images/circle-01.jpeg' alt="Circle" width={16} height={16.58} />
+          <div className=" flex top-[50%] left-[20%] absolute">
+              <Image src='/images/firstSession/circle-01.png' alt="Circle" width={16} height={16.58} />
           </div>
-          <div className=" flex top-[20%] right-[-20%] absolute">
-              <Image src='/images/x.jpeg' alt="X" width={24} height={23.48} />
+          <div className=" flex top-[50%] right-[20%] absolute">
+              <Image src='/images/firstSession/x.png' alt="X" width={24} height={23.48} />
           </div>
-          <div className=" flex bottom-[-16%] left-[16%] absolute">
-              <Image src='/images/bitcoin-01.jpeg' alt="Bitcoin" width={44} height={44.41} />
+          <div className=" flex bottom-[-10%] left-[34%] absolute">
+              <Image src='/images/firstSession/bitcoin-01.png' alt="Bitcoin" width={44} height={44.41} />
           </div>
-          <div className=" flex bottom-[-16%] right-[16%] absolute">
-              <Image src='/images/circle-03.jpeg' alt="Circle 3" width={24} height={25.78} />
+          <div className=" flex bottom-[-10%] right-[34%] absolute">
+              <Image src='/images/firstSession/circle-03.png' alt="Circle 3" width={24} height={25.78} />
           </div>
           <h1 className=" text-8xl font-sans">
             Buy & Sell Nerko&apos;s Collection
