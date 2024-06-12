@@ -1,7 +1,7 @@
 import Image from "next/image";
 const FirstSession = () => {
   return (
-    <div className="w-full h-full justify-center text-center pb-[40px] mt-[82px] mb-[80px] overflow-hidden">
+    <div className="w-full h-full justify-center text-center pb-[40px] mt-[170px] mb-[80px] overflow-hidden">
         <div>
             <div className="w-full pointer-events-none select-none bg-center bg-cover">
                 <Image src='/images/background.png' alt="background" fill className=" object-cover opacity-20 z-[-1]" />
@@ -9,7 +9,7 @@ const FirstSession = () => {
         </div>
       <div className=" flex justify-center">
         <div className=" flex w-64 justify-center">
-          <div className=" flex top-[15%] left-[45%] absolute">
+          <div className=" flex top-[15%] left-[50%] absolute">
               <Image src='/images/firstSession/ethereum-01.png' alt="Ethereum" className="z-20" width={44} height={43.5} />
           </div>
           <div className=" flex top-[50%] left-[20%] absolute">
@@ -24,13 +24,13 @@ const FirstSession = () => {
           <div className=" flex bottom-[-10%] right-[34%] absolute">
               <Image src='/images/firstSession/circle-03.png' alt="Circle 3" width={24} height={25.78} />
           </div>
-          <h1 className=" text-8xl font-sans font-bold">
+          <h1 className=" xl:text-9xl lg:text-8xl md:text-6xl sm:text-6xl text-6xl font-sans font-bold">
             Buy & Sell Nerko&apos;s Collection
           </h1>
         </div>
       </div>
-      <div className="justify-center my-5">
-        <h1 className=" font-MabryPro-Medium text-2xl">
+      <div className="justify-center my-5 px-4">
+        <h1 className=" font-MabryPro-Medium text-2xl ">
           Invest and manage all your NFTs at one place.
         </h1>
       </div>
