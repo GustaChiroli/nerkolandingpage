@@ -45,7 +45,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-[#F8F6F5]">
+    <div className="fixed top-0 left-0 w-full z-50 ">
       <div className=" flex justify-center h-20  py-[10px] mt-[10px]">
         <div className=" flex justify-center w-[92.5%] max-w-[1200px]">
           <div className=" flex justify-between w-full">

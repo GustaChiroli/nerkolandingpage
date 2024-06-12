@@ -24,9 +24,12 @@ const FirstSession = () => {
           <div className=" flex bottom-[-10%] right-[34%] absolute">
               <Image src='/images/firstSession/circle-03.png' alt="Circle 3" width={24} height={25.78} />
           </div>
-          <h1 className=" xl:text-9xl lg:text-8xl md:text-6xl sm:text-6xl text-6xl font-sans font-bold">
-            Buy & Sell Nerko&apos;s Collection
-          </h1>
+          <div  className="w-auto ">
+
+            <h1 className="xl:w-[600px] xl:text-7xl lg:text-6xl md:text-6xl sm:text-46xl text-6xl font-sans font-bold">
+              Buy & Sell Nerko&apos;s Collection
+            </h1>
+          </div>
         </div>
       </div>
       <div className="justify-center my-5 px-4">
