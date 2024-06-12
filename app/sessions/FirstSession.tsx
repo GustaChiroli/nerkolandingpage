@@ -24,7 +24,7 @@ const FirstSession = () => {
           <div className=" flex bottom-[-10%] right-[34%] absolute">
               <Image src='/images/firstSession/circle-03.png' alt="Circle 3" width={24} height={25.78} />
           </div>
-          <h1 className=" text-8xl font-sans">
+          <h1 className=" text-8xl font-sans font-bold">
             Buy & Sell Nerko&apos;s Collection
           </h1>
         </div>

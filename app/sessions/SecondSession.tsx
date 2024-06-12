@@ -1,8 +1,12 @@
+"use client";
 import Card from "../_components/SecondSession/Card";
+import { useScroll } from "../_components/ScrollContext";
+
 const alignbot = "mt-[29px]"
-const FirstSession = () => {
+const SecondSession = () => {
+  const { isScrolled } = useScroll();
   return (
-    <div className="flex justify-center pt-[60px]" >
+    <div id="second-session" className="flex justify-center pt-[60px]" >
 
       <div className="flex flex-wrap justify-center gap-8 pt-[60px] pb-[80px] max-w-[1200px]">
         <Card align={alignbot} imag="/images/secondSession/06.jpg" title="#Metaverse" sub="By TheSalvare" />
@@ -18,4 +22,4 @@ const FirstSession = () => {
   );
 };
 
-export default FirstSession;
+export default SecondSession;

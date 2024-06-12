@@ -16,8 +16,8 @@
   }
 }
 
-body {
-  
+.choose-link {
+  color: #741FF5 !important;
 }
 
 @layer utilities {
@@ -36,7 +36,7 @@ body {
 @font-face {
   font-family: 'MabryPro';
   src: url('/fonts/MabryPro-Black.ttf') format('truetype');
-  font-weight: bold;
+  font-weight:normal;
   font-style: normal;
 }
 
