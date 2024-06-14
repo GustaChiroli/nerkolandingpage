@@ -20,6 +20,12 @@
   color: #741FF5 !important;
 }
 
+.text-gradient {
+  background: linear-gradient(to top right, #4900F9, #C500EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

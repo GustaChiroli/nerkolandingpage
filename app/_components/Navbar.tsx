@@ -79,7 +79,7 @@ const Navbar = () => {
                 <h1
                   className={`cursor-pointer px-4 content-center text-xl font-MabryPro-Regular ${
                     isSecondSession ? "choose-link" : "hover:text-[#741FF5]"
-                  }`} onClick={() => scrollToSession('second')}
+                  }`} onClick={() => scrollToSession('third')}
                 >
                   Choose
                 </h1>
@@ -106,7 +106,7 @@ const Navbar = () => {
         <div className="flex justify-start align-middle w-[100%]">
           <Image
             className="p-5"
-            src="/logo.jpeg"
+            src="/logo.svg"
             alt="Nerko"
             width={120}
             height={35}

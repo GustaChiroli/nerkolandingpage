@@ -3,8 +3,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface CardProps {
     imag: string;
-    title: String;
-    sub: String;
+    title: string;
+    sub: string;
     align: string;
 }
 
