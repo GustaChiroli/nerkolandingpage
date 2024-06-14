@@ -1,4 +1,5 @@
 import Image from "next/image";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface CardProps {
     imag: string;
@@ -8,9 +9,10 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ imag, title, sub, align}) => {
+  const isMobile = useMediaQuery("(max-width:995px)");
   return (
     <>
-      <div className={`flex justify-center ${align} h-[405px]`}>
+      <div className={`flex justify-center ${isMobile? '' : align} h-[405px]`}>
         <div className={`flex flex-col rounded-cardBorderRadius bg-white shadow-lg `}>
           <Image
             className="object-cover mb-4 p-4 rounded-lg overflow-hidden"

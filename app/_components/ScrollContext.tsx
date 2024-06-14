@@ -3,12 +3,14 @@ import { createContext, useContext, useEffect, useState, ReactNode } from 'react
 
 interface ScrollContextProps {
   isScrolled: boolean;
+  isSecondSession: boolean;
 }
 
-const ScrollContext = createContext<ScrollContextProps>({ isScrolled: false });
+const ScrollContext = createContext<ScrollContextProps>({ isScrolled: false, isSecondSession: false});
 
 export const ScrollProvider = ({ children }: { children: ReactNode }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isSecondSession, setIsSecondSession] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +21,16 @@ export const ScrollProvider = ({ children }: { children: ReactNode }) => {
       if (secondSessionElement) {
         const secondSessionTop = secondSessionElement.offsetTop;
         if (offset > secondSessionTop - windowHeight / 2) {
-          setIsScrolled(true);
+          setIsSecondSession(true);
         } else {
-          setIsScrolled(false);
+          setIsSecondSession(false);
         }
+      }
+
+      if ( offset > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
       }
     };
     window.addEventListener('scroll', handleScroll);
@@ -32,7 +40,7 @@ export const ScrollProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   return (
-    <ScrollContext.Provider value={{ isScrolled }}>
+    <ScrollContext.Provider value={{ isScrolled, isSecondSession }}>
       {children}
     </ScrollContext.Provider>
   );
