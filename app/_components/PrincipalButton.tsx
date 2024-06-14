@@ -8,7 +8,6 @@ interface PrincipalButtonProps {
 }
 
 const PrincipalButton: React.FC<PrincipalButtonProps> = ({ text, onClick }) => {
-    console.log('Button text:', text);
     return ( 
         <div 
             className=" hover:brightness-110 w-full justify-center text-justify align-middle flex cursor-pointer"

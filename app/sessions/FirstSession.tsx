@@ -11,7 +11,7 @@ const FirstSession = () => {
   const isMobile = useMediaQuery("(max-width:995px)");
 
   return (
-    <div id="first-session" className="w-full h-full justify-center text-center pb-[40px] mt-[170px] mb-[80px] overflow-hidden">
+    <div id="first-session" className="w-full h-screen justify-center text-center pb-[40px] mt-[170px] mb-[80px] overflow-hidden">
         <div>
             <div className="w-full pointer-events-none select-none bg-center bg-cover">
                 <Image src='/images/background.png' alt="background" fill className=" object-cover opacity-20 z-[-1]" />
