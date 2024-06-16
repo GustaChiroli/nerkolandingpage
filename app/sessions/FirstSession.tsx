@@ -11,7 +11,7 @@ const FirstSession = () => {
   const isMobile = useMediaQuery("(max-width:995px)");
 
   return (
-    <div id="first-session" className="w-full h-screen justify-center text-center pb-[40px] mt-[170px] mb-[80px] overflow-hidden">
+    <div id="first-session" className="w-full justify-center text-center pb-[40px] mt-[170px] mb-[80px] overflow-hidden">
         <div>
             <div className="w-full pointer-events-none select-none bg-center bg-cover">
                 <Image src='/images/background.png' alt="background" fill className=" object-cover opacity-20 z-[-1]" />
@@ -43,7 +43,7 @@ const FirstSession = () => {
           </div>
           <div  className="w-auto ">
 
-            <h1 className="xl:w-[600px] xl:text-7xl lg:text-6xl md:text-6xl sm:text-46xl text-6xl font-sans font-bold">
+            <h1 className="xl:w-[600px] xl:text-7xl lg:text-6xl md:text-6xl sm:text-46xl text-6xl font-PowerGrotesk font-bold">
               Buy & Sell Nerko&apos;s Collection
             </h1>
           </div>

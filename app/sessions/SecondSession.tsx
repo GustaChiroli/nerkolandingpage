@@ -12,7 +12,7 @@ const SecondSession = () => {
 
   return (
     <div className="pt-[60px] pb-[80px]">
-      <div id="second-session" className="flex justify-center" >
+      <div className="flex justify-center" >
 
         <div className="flex flex-wrap justify-center gap-8 pt-[60px] pb-[80px] max-w-[1200px]">
           <Card align={alignbot} imag="/images/secondSession/06.jpg" title="#Metaverse" sub="By TheSalvare" />

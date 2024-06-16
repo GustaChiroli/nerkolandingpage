@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['PowerGrotesk', 'sans-serif'],
+        sans: ['sans-serif'],
+        'PowerGrotesk': ['PowerGrotesk', 'sans-serif'],
         'mabry-pro': ['MabryPro', 'sans-serif'],
         'MabryPro-Medium': ['MabryPro-Medium', 'sans-serif'],
         'MabryPro-Regular': ['MabryPro-Regular', 'sans-serif'],

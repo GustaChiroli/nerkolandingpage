@@ -16,17 +16,22 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 function scrollToSession( session : String) {
   const rightSession = document.getElementById(`${session}-session`);
-  if(session === 'first') {
-    window.scrollTo({top: 0, behavior: 'smooth'})
+  if(session === 'blog') {
+    console.log("ainda não implementado");
   } else {
-    if(rightSession) {
-      rightSession.scrollIntoView({ behavior: 'smooth'});
+    if(session === 'first') {
+      window.scrollTo({top: 0, behavior: 'smooth'})
+    } else {
+      if(rightSession) {
+        rightSession.scrollIntoView({ behavior: 'smooth'});
+      }
     }
   }
+
 }
 
 const Navbar = () => {
-  const { isScrolled, isSecondSession } = useScroll();
+  const { isScrolled, isSecondSession, isThirdSession } = useScroll();
   const [open, setOpen] = React.useState(false);
   const isMobile = useMediaQuery("(max-width:995px)");
 
@@ -34,15 +39,26 @@ const Navbar = () => {
     setOpen(newOpen);
   };
 
+  const sessions = [
+    { text: "Home", value: 'first' }, 
+    {text: "Choose", value: 'second' },
+    {text: "About", value: 'third' }, 
+    {text: "Team", value: 'fourth' },
+    {text: "Road Map", value: 'fifth' },
+    {text: "Blog", value: 'blog' },
+  ];
+
   const DrawerList = (
     <Box sx={{ width: 300 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {["Home", "Choose", "About", "Team", "Road Map", "Blog"].map(
-          (text, index) => (
-            <div key={text}>
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemText primary={text} />
+        {sessions.map(
+          (session, index) => (
+            <div key={session.value}>
+              <ListItem disablePadding>
+                <ListItemButton
+                  onClick={() => scrollToSession(session.value)}
+                >
+                  <ListItemText primary={session.text} />
                   <ListItemIcon>
                     {index === 0 || index === 5 ? <AddBoxIcon /> : ""}
                   </ListItemIcon>
@@ -62,11 +78,11 @@ const Navbar = () => {
         isScrolled ? "bg-[#F8F6F5]" : ""
       } `}
     >
-      <div className=" flex justify-center h-20  py-[10px] mt-[10px]">
+      <div className={` flex justify-center h-20  py-[10px] ${ isMobile ? 'mt-[10px]' : ''}`}>
         <div className=" flex justify-center w-[92.5%] max-w-[1200px]">
           <div className=" flex justify-between w-full">
             <div className=" content-center">
-              <Image src="/logo.svg" alt="Nerko" width={120} height={36} />
+              <Image src="/logo.svg" alt="Nerko" width={isScrolled ? 90 : 120} height={isScrolled ? 26 : 36} />
             </div>
             {!isMobile ? (
               <div className="flex justify-evenly">
@@ -79,11 +95,17 @@ const Navbar = () => {
                 <h1
                   className={`cursor-pointer px-4 content-center text-xl font-MabryPro-Regular ${
                     isSecondSession ? "choose-link" : "hover:text-[#741FF5]"
-                  }`} onClick={() => scrollToSession('third')}
+                  }`} 
+                  onClick={() => scrollToSession('second')}
                 >
                   Choose
                 </h1>
-                <h1 className=" cursor-pointer hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">
+                <h1 
+                  className={`cursor-pointer px-4 content-center text-xl font-MabryPro-Regular ${
+                    isThirdSession ? "choose-link" : "hover:text-[#741FF5]"
+                  }`} 
+                  onClick={() => scrollToSession('third')}
+                >
                   About
                 </h1>
                 <h1 className=" cursor-pointer hover:text-[#741FF5] px-4 content-center text-xl font-MabryPro-Regular">
